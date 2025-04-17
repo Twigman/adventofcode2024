@@ -23,6 +23,7 @@ with open(input_file) as f:
 left_arr_sorted = np.sort(left_arr)
 right_arr_sorted = np.sort(right_arr)
 
+# part 1
 # calc distance
 if len(left_arr_sorted) == len(right_arr_sorted):
     diff = left_arr_sorted - right_arr_sorted
@@ -31,3 +32,15 @@ if len(left_arr_sorted) == len(right_arr_sorted):
     print('sum of distances: ' + str(total_distance))
 else:
     print('error in input list')
+
+# part 2
+# assuming arrays are correct
+# count number of entries from left_arr_sorted in right_arr_sorted
+count_arr = np.empty(num_entries, dtype=int)
+similarity_score = 0
+
+for index, value in np.ndenumerate(left_arr_sorted):
+    count_arr[index] = (right_arr_sorted == value).sum()
+    similarity_score += count_arr[index] * value
+
+print(f"similarity score: {similarity_score}")
