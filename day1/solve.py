@@ -29,7 +29,7 @@ if len(left_arr_sorted) == len(right_arr_sorted):
     diff = left_arr_sorted - right_arr_sorted
     abs_diff = np.abs(diff)
     total_distance = np.sum(abs_diff)
-    print('sum of distances: ' + str(total_distance))
+    print(f"sum of distances: {total_distance}")
 else:
     print('error in input list')
 

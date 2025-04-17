@@ -1,0 +1,1 @@
+pyenv local adventofcode2024
