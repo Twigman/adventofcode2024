@@ -52,14 +52,12 @@ print("Part 1:")
 print(f"#records passed rule 2: {len(safe_records)}")
 
 # part 2
-temp = unusual_records.copy()
+records_to_check = unusual_records.copy()
 # remove safe records
 for i in sorted(safe_indizes, reverse=True):
-    del temp[i]
+    del records_to_check[i]
 
-records_to_check = temp
 dampener_records = []
-index = 0
 bad_preselection_counter = 0
 
 for record in records_to_check:
@@ -119,7 +117,6 @@ for record in records_to_check:
     fixed = try_fix_record(record)
     if fixed is not None:
         dampener_records.append(fixed)
-    index += 1
 
 print("Part 2:")
 print(f"testing: {len(records_to_check)}")
