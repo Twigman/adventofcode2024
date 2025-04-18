@@ -41,7 +41,7 @@ for instruction_string in instruction_string_list:
     index_dont = 0
     index_mul = 0
     
-    # find do and dont
+    # find indices and muls
     do_pos = [m.start() for m in re.finditer(r'do\(\)', instruction_string)]
     dont_pos = [m.start() for m in re.finditer(r"don't\(\)", instruction_string)]
     mul_matches = [(m.group(), m.start()) for m in re.finditer(r"mul\(\d+,\d+\)", instruction_string)]
