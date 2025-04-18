@@ -32,8 +32,11 @@ if len(left_arr_sorted) == len(right_arr_sorted):
     print(f"sum of distances: {total_distance}")
 else:
     print('error in input list')
+    
+######################################################
+# Part 2
+######################################################
 
-# part 2
 # assuming arrays are correct
 # count number of entries from left_arr_sorted in right_arr_sorted
 count_arr = np.empty(num_entries, dtype=int)

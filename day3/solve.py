@@ -32,7 +32,10 @@ print(f"sum of products: {sum_prod_part1}")
 sum_prod_part2 = 0
 execute = True
 
-# part 2
+######################################################
+# Part 2
+######################################################
+
 for instruction_string in instruction_string_list:
     index_do = 0
     index_dont = 0

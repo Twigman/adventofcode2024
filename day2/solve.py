@@ -51,7 +51,10 @@ safe_records, safe_indizes = apply_rules(unusual_records)
 print("Part 1:")
 print(f"#records passed rule 2: {len(safe_records)}")
 
-# part 2
+######################################################
+# Part 2
+######################################################
+
 records_to_check = unusual_records.copy()
 # remove safe records
 for i in sorted(safe_indizes, reverse=True):

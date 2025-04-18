@@ -11,7 +11,7 @@ text = []
 word = 'XMAS'
 
 def load_data_from_file(filename: str) -> list:
-    with open(input_file) as f:
+    with open(filename) as f:
         data = f.readlines()
     return data
 
