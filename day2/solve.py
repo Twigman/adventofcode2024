@@ -49,7 +49,6 @@ safe_indizes = []
 safe_records, safe_indizes = apply_rules(unusual_records)
 
 print("Part 1:")
-#print(f"#records passed rule 1: {num_passed_rule_one}")
 print(f"#records passed rule 2: {len(safe_records)}")
 
 # part 2
