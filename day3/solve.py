@@ -6,11 +6,8 @@ instruction_string_list = []
 sum_prod_part1 = 0
 
 def load_data_from_file(filename: str) -> list:
-    data = []
-    # read instructions
     with open(input_file) as f:
-        for line in f:
-            data.append(line)
+        data = f.readlines()
     return data
 
 
