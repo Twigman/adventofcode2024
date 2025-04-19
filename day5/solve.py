@@ -127,5 +127,5 @@ for incorrect_pages in incorrect_updates:
 score_part2 = calc_score(corrected_updates)
 
 print('Part 2:')
-print(f"corrected {len(corrected_updates)} from {len(incorrect_updates)}")
+print(f"corrected {len(corrected_updates)} out of {len(incorrect_updates)}")
 print(f"score: {score_part2}")
