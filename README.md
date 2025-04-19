@@ -7,4 +7,5 @@ day 3: **<br />
 day 4: **<br />
 day 5: **<br />
 day 6: **<br />
-day 7: **
+day 7: **<br />
+day 8: **
